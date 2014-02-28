@@ -1,0 +1,657 @@
+/* Getting the new tags to behave */
+
+
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
+mark, rp, rt, ruby, summary, time{ display: inline }
+*{
+padding:0px;
+margin:0px;
+}
+img{border:0px;}
+/* Global properties ======================================================== */
+body { 
+        background:url(../imagesCL/bg.png) 0 0 repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:100%; 
+	line-height:1.125em;
+	color:#242424;
+        alignment-adjust: central;
+}
+html { min-width:1000px;}
+html, body { height:100%;}
+
+
+
+/* Global Structure ============================================================= */
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: 1000px;
+	font-size:.8125em;
+	float:none;
+}
+        #topwrapper{
+            
+        margin: 0 auto;
+	position: relative;
+	width: 1000px;
+        float:none;    
+        }
+
+	/* Header */
+	layout\:header{
+		height:170px;
+		overflow:hidden;
+                text-align: center;
+		width:100%;
+                position:relative;
+		background:url(../imagesCL/headerbg.png) 0 0 repeat-x;
+	}
+        #top{
+                top:0px;
+            	height:170px;
+		overflow:hidden;
+                text-align: center;
+		width:100%;
+                position:absolute;
+		background:url(../imagesCL/headerbg.png) 0 0 repeat-x;
+        }
+
+#user{
+        top:15px;
+	left:430px;
+	font-size:14px;
+        position:absolute;
+		
+	}
+		
+#menu{
+position:absolute;
+top:68px;
+left:185px;
+}
+#menu li{
+	display:inline; 
+}
+#menu a{
+margin:0 5px 0 0;
+width:110px;
+height:28px;
+text-align:center;
+padding:4px 0 4px 0;
+display:block;
+float:left;
+font-family:Arial, Helvetica, sans-serif;
+font-size:16px;
+color:#0D0D0D;
+text-decoration:underline;
+background-position:top left;
+background-repeat:no-repeat;
+}
+#menu .but1_active, #menu .but1:hover{background-image:url(../imagesCL/optionbg.png); text-decoration:none; color:#FFFFFF;}
+#menu .but2_active, #menu .but2:hover{background-image:url(../imagesCL/optionbg.png); text-decoration:none; color:#FFFFFF;}
+#menu .but3_active, #menu .but3:hover{background-image:url(../imagesCL/optionbg.png); text-decoration:none; color:#FFFFFF;}
+#menu .but4_active, #menu .but4:hover{background-image:url(../imagesCL/optionbg.png); text-decoration:none; color:#FFFFFF;}
+#menu .but5_active, #menu .but5:hover{background-image:url(../imagesCL/optionbg.png); text-decoration:none; color:#FFFFFF;}
+#menu .but6_active, #menu .but6:hover{background-image:url(../imagesCL/optionbg.png); text-decoration:none; color:#FFFFFF;}
+
+/*===== welcome =====*/
+#welcome {	
+	height:30px;
+}
+
+#search{
+	height:50px;
+        bottom:-170px;
+
+        left:185px;
+	font-size:16px;
+        position:absolute;
+	padding:5px auto 5px 10px;	
+	}
+#kid{
+	height:178px;
+	width:165px;
+        top:5px;
+	left:20px;
+        position:absolute;
+
+	}	
+#logo{
+	height:43px;
+	width:45px;
+        top:0;
+	left:185px;
+        position:absolute;
+
+	}
+#cart{
+	height:43px;
+	width:43px;
+        top:0;
+
+        left:827px;
+        position:absolute;
+
+	}	
+	/*Gallery*/
+	#gallery {
+            width:100%;
+            align:center;
+            top:170px;
+	    float:center;
+            height:496px;
+            overflow:hidden;
+            position: absolute;
+	}
+        #test{
+            left:0px;
+            top:170px;
+	    float:none;
+            height:496px;
+            overflow:hidden;
+            position: absolute;
+        }
+	
+	/* Content */
+	#content {
+		float: left;
+		width: 572px;
+	}
+	
+	/* Sidebar */
+	aside{
+		float: left;
+		width: 302px;
+		margin-right:52px;
+	}
+	
+			
+
+
+           
+
+
+/* Left & Right alignment */
+
+.fleft { float:left;}
+.fright { float:right;}
+.clear { clear:both;}
+
+.col-1, .col-2, .col-3 { float:left;}
+
+.alignright { text-align:right;}
+.aligncenter { text-align:center;}
+
+.wrapper { 
+	width:100%;
+	overflow:hidden;
+}
+
+/* The inside class provides consistent padding. To be used often! */
+.inside{ padding: 0 0 0 0; }
+
+
+/*----- form defaults -----*/
+input, select, textarea { 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1em;
+	vertical-align:middle;
+	font-weight:normal;
+}
+
+/*----- other -----*/
+figure { margin-bottom:18px;}
+
+.img-indent { 
+	margin:0 20px 0 0; 
+	float:left;
+}
+.img-box { 
+	width:100%; 
+	overflow:hidden; 
+	padding-bottom:15px;
+}
+	.img-box figure { 
+		float:left; 
+		margin:0 20px 0 0;
+		padding:0;
+	}
+
+.extra-wrap { 
+	overflow:hidden;
+}
+
+ p {margin-bottom:18px;}
+.p1 { margin-bottom:9px;}
+.p2 { margin-bottom:18px;}
+.p3 { margin-bottom:27px;
+}
+
+
+/*----- txt, links, lines, titles -----*/
+a {
+	color:#f27f02; 
+	outline:none;
+}
+a:hover{
+	text-decoration:none;
+}
+
+h1 {
+	font-size:32px;
+	line-height:1.2em;
+	color:#e9b879;
+	font-weight:normal;
+        top:8px;
+	left:234px;
+        position:absolute;
+        padding-right: 10px;
+}
+
+
+	h1 a {
+		color:#e9b879;
+		text-decoration:none;
+	}
+h2 {
+	font-size:30px;
+	line-height:1.2em;
+	font-weight:normal;
+	color:#E9410E;
+	margin-bottom:22px;
+}
+	h2 span {
+		color:#8a8a8a;
+	}
+h3 {
+	font-size:1em;
+	margin-bottom:6px;
+}
+	h3 a { color:#242424; }
+	h3 a:hover {
+		text-shadow: 1px 1px 1px #888; 
+	}
+
+
+
+
+/*==================boxes====================*/
+.main-box {
+        top:650px;
+        position:absolute;
+	border-top:solid #eaeaea;
+	background:#fff;
+	width:100%;
+}
+
+
+.contacts {
+	padding-bottom:20px;
+}
+	.contacts li {
+		width:100%;
+		overflow:hidden;
+	}
+		.contacts li strong {
+			float:left;
+			width:95px;
+		}
+
+
+.list1 {
+	margin-left:12px;
+	padding-bottom:18px;
+}
+.list1 li {
+	background:url(../imagesCL/arrow1.gif) no-repeat 0 6px;
+	padding:0 0 0 12px;
+}
+
+		
+
+/*===== gallery =====*/
+.roundabout-holder  { 
+	width:850px;
+	height:496px;
+	margin:0 auto;
+}
+.roundabout-moveable-item {
+   width: 646px;
+   height: 416px;
+   cursor: pointer;
+	 border:3px solid #ccc;
+	 border:3px solid rgba(0, 0, 0, 0.08);
+   border-radius:4px;
+	 -moz-border-radius:4px;
+	 -webkit-border-radius:4px;
+}
+	.roundabout-moveable-item img{
+		width:100%;
+	}
+.roundabout-in-focus {
+	border:3px solid rgba(0, 0, 0, 0.2);
+}
+
+
+/*===== content =====*/
+#content {
+	
+}
+	#content img, aside img {
+		border:3px solid #ebebeb;
+		border-radius:4px;
+		-moz-border-radius:4px;
+		-webkit-border-radius:4px;
+	}
+	#content img:hover {
+		border-color:#bbb;
+	}
+
+/*--- loopedSlider styles ---*/
+/*
+ * Required 
+*/
+#loopedSlider .wrap { width:295px; height:295px; overflow:hidden; position:relative;}
+#loopedSlider .slides { position:absolute; top:0; left:0; }
+#loopedSlider .slides div { position:absolute; top:0; width:295px; display:none; }
+/*
+ * Optional
+*/
+#loopedSlider { width:295px; position:relative; clear:both; }
+#loopedSlider .nav-controls {
+	width:100%;
+	overflow:hidden;
+	padding-top:10px;
+}
+#loopedSlider li {
+	display:inline;
+}
+#loopedSlider li a.previous {
+	float:left;
+}
+#loopedSlider li a.next {
+	float:right;
+}
+
+#colors{
+float:left;
+padding:0 0 0 0;
+width:1000px;
+height:5px;
+}
+.color{
+width:249px;
+height:5px;
+float:left;
+padding:0 0 0 0;
+display:inline;
+
+}
+
+#items{
+float:left;
+padding:0 0 0 0;
+width:1000px;
+}
+.item{
+width:241px;
+height:265px;
+float:left;
+background-image:url(../imagesCL/item_bg.png);
+background-position:top left;
+background-repeat:no-repeat;
+padding:0 9px 0 0;
+display:inline;
+}
+.item img{
+margin:26px 0 0 25px;
+}
+.item span{
+display:block;
+float:left;
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#E9410E;
+width:70px;
+padding:0 0 0 20px;
+}
+.view{	
+display:block;
+float:left;
+line-height:18px;
+margin:3px 3px 0 0;
+width:41px;
+text-align:center;
+background-image:url(../imagesCL/view_bg.gif);
+background-position:top left;
+background-repeat:no-repeat;
+color:#fff;
+text-decoration:none;
+font-size:14px;
+}
+.buy{
+display:block;
+float:left;
+line-height:18px;
+margin:3px 3px 0 0;
+width:92px;
+text-align:center;
+background-image:url(../imagesCL/buy_bg.gif);
+background-position:top left;
+background-repeat:no-repeat;
+color:#CAFF34;
+text-decoration:none;
+font-size:10px;	
+}
+
+
+/*===== footer =====*/
+	/* Footer */
+
+ .footer {
+        left:0px;
+        bottom:-390px;
+
+        position:absolute;
+        
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background:url(../imagesCL/footerbg.png) 0 0 repeat-x;
+	color: #ffffff;
+        padding:20px 0 0px 0;
+	border-top:solid #eee;
+
+}
+	footer .fleft {
+		padding-left:40px;
+	}
+	footer .fright {
+		padding-right:40px;
+	}
+    footer .footer_menu {
+	margin: 0 0 10px 0;
+	padding: 0px;
+	list-style: none;
+    }
+	.footer_menu li {
+	margin: 0px;
+	padding: 0 20px;
+	display: inline;
+	border-right: 1px solid #aea68c;
+}
+
+.footer_menu li a {
+	color: #ffffff;
+}
+	
+
+
+/*----- forms -----*/
+#contacts-form { 
+	clear:right;
+	width:100%;
+	overflow:hidden;
+}
+	#contacts-form fieldset { 
+		border:none;
+		float:left;
+	}
+		#contacts-form .field { 
+			clear:both;
+		}
+			#contacts-form label { 
+				float:left;
+				width:110px;
+				line-height:18px;
+				padding-bottom:6px;
+				font-weight:bold;
+			}
+			#contacts-form input {
+				width:205px;
+				padding:1px 0 1px 3px;
+				background:none;
+				border:1px solid #e5e5e5;
+				color:#616161;
+				float:left
+			}
+			#contacts-form input:invalid {
+				border-color:red;
+			}
+			#contacts-form textarea { 
+				width:450px;
+				height:215px;
+				padding:1px 0 1px 3px;
+				background:none;
+				border:1px solid #e5e5e5;
+				color:#616161;
+				margin-bottom:12px;
+				overflow:auto;
+				float:left;
+			}
+			#contacts-form div:last-child {
+				padding-left:110px;
+			}
+			
+			
+
+/*==========================================*/
+#mainbox {
+	    float:none;
+	    height:450px;
+            width:100%;
+	    overflow:hidden;
+            position:relative;
+            font-size:18px;
+            text-align: center;
+            top:170px;
+            position: absolute;
+		
+	}
+#login{
+	width:825px;
+	height:465px;
+	overflow:hidden;
+        text-align: left;
+	margin: 0 auto;
+        padding:70px 10px 10px 190px;
+        overflow:left;
+	position:absolute;
+	background:url(../imagesCL/loginbg.png) 50px 0 no-repeat;	
+	}
+	
+#register{
+	width:825px;
+	height:465px;
+	overflow:hidden;
+        text-align: left;
+	margin: 0 auto;
+        padding:30px 10px 10px 120px;
+        overflow:left;
+        position:absolute;
+	background:url(../imagesCL/registerbg.png) 50px 0 no-repeat;	
+	}
+#mainboxer {
+	    float:none;
+            height:200px;
+            width:100%;
+	    overflow:auto;
+            position:relative;
+            font-size:18px;
+            text-align: center;
+		
+	}
+        
+     #tablestyle{
+            text-align: left;
+            width:1000px;
+            font-size:14px;
+                            	 border:1px solid #ccc;
+	                         border:1px solid rgba(0, 0, 0, 0.08);
+                                 border-radius:1px;
+	                         -moz-border-radius:1px;
+	                         -webkit-border-radius:1px;
+            margin:0;
+            padding:0;
+            border-collapse:collapse;
+            background:url(../imagesCL/bg.png) 0 0 repeat;
+        }
+        th{
+            border:1px solid #ccc;
+            border:1px solid rgba(0, 0, 0, 0.08);
+        }
+        
+         td{
+            border:1px solid #ccc;
+            border:1px solid rgba(0, 0, 0, 0.08);
+        }
+ #biddiv{
+     text-align: left;
+     overflow: hidden;
+     padding-left: 40%;      
+        }
+#tableabout{
+            text-align: left;
+            width:600px;
+            height:200px;
+            font-size:14px;           
+        }
+h4 {
+	font-size:34px;
+	line-height:1.2em;
+	color:#e9b879;
+	font-weight:normal;
+        top:20px;
+	left:40%;
+        position:absolute;
+} 
+
+#help{
+	width:825px;
+	height:465px;
+	overflow:hidden;
+        text-align: left;
+	margin: 0 auto;
+        padding:20px 10px 10px 150px;
+        overflow:left;
+        position:absolute;
+	background:url(../imagesCL/registerbg.png) 50px 0 no-repeat;	
+	}
+#tablehelp{
+            text-align: left;
+            width:600px;
+            height:260px;
+            font-size:14px;           
+        }
+        
+h5 {
+	font-size:34px;
+	line-height:1.2em;
+	color:#e9b879;
+	font-weight:normal;
+        top:20px;
+	left:30%;
+        position:absolute;
+}        

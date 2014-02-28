@@ -1,0 +1,17 @@
+document.writeln("<footer>");
+document.writeln("<div class='container'>");
+document.writeln("<div class='wrapper'>");
+document.writeln("<nav>");
+document.writeln("<ul class='footer_menu'>");
+document.writeln("<li><a href='index.jsp'>Home</a></li>");
+document.writeln("<li><a href='about.jsp'>About us</a></li>");
+document.writeln("<li><a href='viewmybiditems.jsp'>My auction</a></li>");
+document.writeln("<li><a href='item.jsp'>Sell items</a></li>");
+document.writeln("<li><a href='viewmysaleitems.jsp'>View items</a></li>");
+document.writeln("<li><a href='help.jsp'>Customer & Help</a></li>");
+document.writeln("</ul>");
+document.writeln("</nav>");
+document.writeln("<div class='fright'>Copyright - Created by Xiaofeng Zhu,WeiFeng Guo</div>");
+document.writeln("</div>");
+document.writeln("</div>");
+document.writeln("</footer>");
